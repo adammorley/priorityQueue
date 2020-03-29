@@ -3,11 +3,6 @@
 */
 package priorityQueue
 
-import (
-	"container/heap"
-	"fmt"
-)
-
 type Item struct {
 	value    interface{} // an arbitrary value to track
 	priority int         // the priority
