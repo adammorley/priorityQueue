@@ -6,7 +6,7 @@ import (
 )
 
 func TestPriorityQueue(test *testing.T) {
-	items := map[int]int{1: 2, 2: 3, 3: 4}
+	items := map[int]int{3: 4, 1: 2, 2: 3}
 	pq := make(PriorityQueue, len(items))
 	i := 0
 	for v, p := range items {

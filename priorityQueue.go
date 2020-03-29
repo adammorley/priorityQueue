@@ -21,9 +21,9 @@ func (pq PriorityQueue) Swap(i, j int) {
 	pq[i].index = i
 	pq[j].index = j
 }
-func (pq *PriorityQueue) Push(x interface{}) {
+func (pq *PriorityQueue) Push(i interface{}) {
 	n := len(*pq)
-	item := x.(*Item)
+	item := i.(*Item)
 	item.index = n
 	*pq = append(*pq, item)
 }
